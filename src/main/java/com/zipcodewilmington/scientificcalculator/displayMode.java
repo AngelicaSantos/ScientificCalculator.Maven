@@ -1,19 +1,18 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class displayMode {
-    public static String display(double answer) {
+    public static String display(Double dub, int mode) {
         String answr = "Test";
 
-        Double d = new Double(100.5);
-        Integer dubInt = d.intValue();
+        Integer dubInt = dub.intValue();
 
 
 
-        int display = 1;
+        int choice = mode;
 
 
 
-        switch (display) {
+        switch (choice) {
             case 1:
                 answr = Integer.toHexString(dubInt);
                 break;
@@ -25,10 +24,9 @@ public class displayMode {
                 break;
             default:
             case 4:
-                answr = d.toString();
+                answr = dub.toString();
                 break;
         }
-        System.out.println(answr);
         return answr;
     }
 }

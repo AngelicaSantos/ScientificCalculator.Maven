@@ -3,6 +3,7 @@ package com.zipcodewilmington.scientificcalculator;
 public class Operator {
     numGetter numClass = new numGetter();
 
+
     public  Double getOperator(String operator,Double firstNum)
 
     {Double answer = 0.0;
@@ -64,16 +65,20 @@ public class Operator {
             answer = advancedMath.atan(firstNum);
             
         }
-        else if(operator.equals("f")){
-            for(int i=1;i <=firstNum;i++){
-                answer+=firstNum*i;
+        else if(operator.equals("!")){
+            answer = 1.0;
+            for(int i=2;i <=firstNum;i++){
+                answer *= i;
 
             }
         }
         else{
             System.out.println("Please enter a valid operator");
         }
-        System.out.println(answer);
+
+
+        int dispMode = app.getDispMode();
+        System.out.println(displayMode.display(answer, dispMode));
         return answer;
     }
 
