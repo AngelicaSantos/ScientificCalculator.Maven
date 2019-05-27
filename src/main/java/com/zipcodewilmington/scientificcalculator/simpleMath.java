@@ -9,14 +9,14 @@ public class  simpleMath {
         return a + b;
     }
 
-    public Double subtract(Double a, Double b) {
+    public static Double subtract(Double a, Double b) {
         return a - b;
     }
 
-    public Double multiply(Double a, Double b) {
+    public static Double multiply(Double a, Double b) {
         return a * b;
     }
-    public Double divide(Double a, Double b) {
+    public static Double divide(Double a, Double b) {
         if (b == 0) {
             System.out.println("Error! Diving by zero is not allowed.");
             return 0.0;
