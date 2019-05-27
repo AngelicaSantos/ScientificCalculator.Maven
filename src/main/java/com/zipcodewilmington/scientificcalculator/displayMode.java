@@ -2,7 +2,7 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class displayMode {
     public static String display(double answer) {
-        String answer = "Test";
+        String answr = "Test";
 
         Double d = new Double(100.5);
         Integer dubInt = d.intValue();
@@ -15,20 +15,20 @@ public class displayMode {
 
         switch (display) {
             case 1:
-                answer = Integer.toHexString(dubInt);
+                answr = Integer.toHexString(dubInt);
                 break;
             case 2:
-                answer = Integer.toBinaryString(dubInt);
+                answr = Integer.toBinaryString(dubInt);
                 break;
             case 3:
-                answer = Integer.toOctalString(dubInt);
+                answr = Integer.toOctalString(dubInt);
                 break;
             default:
             case 4:
-                answer = d.toString();
+                answr = d.toString();
                 break;
         }
-        System.out.println(answer);
-        return answer;
+        System.out.println(answr);
+        return answr;
     }
 }
