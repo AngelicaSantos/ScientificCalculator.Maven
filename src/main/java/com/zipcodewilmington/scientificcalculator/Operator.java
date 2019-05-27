@@ -32,36 +32,36 @@ public class Operator {
         }
         // this down is advancedMath
         else if(operator.equals("r")){
-            answer= Math.sqrt(firstNum);
+            answer= advancedMath.sqrt(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("^")){
             Double secondNum = Console.getDoubleInput("Enter Second number");
-            answer= Math.pow(firstNum,secondNum);
+            answer= advancedMath.pow(firstNum,secondNum);
             System.out.println(answer);
         }
         else if(operator.equals("s")){
-            answer= Math.sin(firstNum);
+            answer= advancedMath.sin(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("cs")){
-            answer= Math.cos(firstNum);
+            answer= advancedMath.cos(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("t")){
-            answer = Math.tan(firstNum);
+            answer = advancedMath.tan(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("is")){
-            answer = Math.asin(firstNum);
+            answer = advancedMath.asin(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("ics")){
-            answer = Math.acos(firstNum);
+            answer = advancedMath.acos(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("it")){
-            answer = Math.atan(firstNum);
+            answer = advancedMath.atan(firstNum);
             System.out.println(answer);
         }
         else if(operator.equals("f")){
