@@ -10,8 +10,9 @@ public class MainApplication {
     while(runCheck) {
         Double firstNum = Console.getDoubleInput("Enter first number");
         String operator = Console.getStringInput("Enter operator");
-        Double secondNum = Console.getDoubleInput("Enter Second number");
-        System.out.println(Operator.getOperator(operator, firstNum, secondNum));
+        //Double secondNum = Console.getDoubleInput("Enter Second number");
+        System.out.println(Operator.getOperator(operator, firstNum));
+        //System.out.println(Operator.getOperator(operator, firstNum, secondNum));
 
         String statusCheck = Console.getStringInput("Press q to quit or the any key to continue");
         if(statusCheck.equals("q")){

@@ -2,19 +2,27 @@ package com.zipcodewilmington.scientificcalculator;
 
 public class Operator {
 
-    public static Double getOperator(String operator,Double firstNum,Double secondNum)
+    public static Double getOperator(String operator,Double firstNum)
 
-    {Double answer = 0.0;
+
+    {
+
+
+        Double answer = 0.0;
         if(operator.equals("+")){
+            Double secondNum = Console.getDoubleInput("Enter Second number");
             answer = simpleMath.add(firstNum,secondNum);
         }
         else if(operator.equals("-")){
-        answer = firstNum - secondNum;
+            Double secondNum = Console.getDoubleInput("Enter Second number");
+            answer = firstNum - secondNum;
         }
         else if(operator.equals("*")){
+            Double secondNum = Console.getDoubleInput("Enter Second number");
             answer = firstNum * secondNum;
         }
         else if(operator.equals("/")){
+            Double secondNum = Console.getDoubleInput("Enter Second number");
             answer = firstNum / secondNum;
         }
         // this down is advancedMath
@@ -23,6 +31,7 @@ public class Operator {
 
         }
         else if(operator.equals("^")){
+            Double secondNum = Console.getDoubleInput("Enter Second number");
             answer= Math.pow(firstNum,secondNum);
         }
         else if(operator.equals("s")){
@@ -43,10 +52,12 @@ public class Operator {
         else if(operator.equals("it")){
             answer = Math.atan(firstNum);
         }
-        else if(operator.equals("f")){
-            for(int i=1;i <=firstNum;i++){
-                answer+=firstNum*i;
+        else if(operator.equals("!")){
+            answer = 1.0;
+            for(int i = 1; i <= firstNum; i++){
+                answer = answer * i;
             }
+            return answer;
         }
         else{
             System.out.println("Please enter a valid operator");
